@@ -1,0 +1,115 @@
+/* Это нужно убрать начало */
+.form-wrapper
+    background-color: #fff
+    position: absolute
+    top: 50%
+    left: 50%
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
+    max-width: 400px
+
+    transform: translate(-50%, -50%)
+    border-radius: 15px
+    padding: 20px
+/* Это нужно убрать конец */
+
+.cp-form
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &__label
+        font-size: 20px
+        padding: 0px 5px
+        display: block
+        font-weight: 400
+
+    &__money
+        display: block
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        margin: 10px 0
+
+    &__money-button
+        outline: none
+        background: #fff
+        border-radius: 5px
+        border: 1px solid #cacaca
+        box-sizing: border-box
+        cursor: pointer
+        transition: all .3s
+        &:hover
+            background-color: #991B1E  
+            border: 1px solid #991B1E 
+            color: #fff
+        &:active
+            color: #b4b4b4
+        &:focus
+             border: 2px solid #991B1E  
+        
+        
+        /* шрифт */
+        padding: 10px 15px
+        font-size: 20px
+
+    &__input
+        background-color: #fefefe
+        transition: box-shadow 0.5s, border-color 0.25s ease-in-out
+        box-sizing: border-box
+        display: block
+        border: 1px solid #cacaca
+        outline: none
+        border-radius: 5px
+        margin: 10px 0
+        &:focus
+            border: 1px solid #8a8a8a
+            background-color: #fefefe
+            outline: none
+            box-shadow: 0 0 5px #cacaca
+            transition: box-shadow 0.5s, border-color 0.25s ease-in-out
+                    
+        /* шрифт */
+        font-wetght: 300
+        padding: 5px
+        font-size: 15px
+
+    &__money-input
+
+        /* шрифт */
+        padding: 15px
+        font-size: 20px
+
+    &__submit
+        box-sizing: border-box
+        background: #991B1E 
+        border: none
+        outline: none
+        border-radius: 10px
+        color: #ffffff
+        border: 2px solid #bebebe00
+        margin: 10px 0
+        cursor: pointer
+        transition: all .4s
+        &:focus
+            border: 2px solid #464646
+        &:hover
+            background:  #1B76FE  
+
+        /* шрифт */
+        padding: 10px
+        font-size: 20px
+
+
+    &__policy
+        display: inline-block
+        margin: auto
+        max-width: 250px
+        text-align: center
+        /* шрифт */
+        font-size: 12px
+    a
+        color: #000!important
+         
+

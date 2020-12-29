@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* Это нужно убрать начало */
+.form-wrapper {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Это нужно убрать конец */
+.cp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cp-form__label {
+  font-size: 20px;
+  padding: 0px 5px;
+  display: block;
+  font-weight: 400;
+}
+.cp-form__money {
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.cp-form__money-button {
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s;
+  /* шрифт */
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.cp-form__money-button:hover {
+  background-color: #991B1E;
+  border: 1px solid #991B1E;
+  color: #fff;
+}
+.cp-form__money-button:active {
+  color: #b4b4b4;
+}
+.cp-form__money-button:focus {
+  border: 2px solid #991B1E;
+}
+.cp-form__input {
+  background-color: #fefefe;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #cacaca;
+  outline: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  /* шрифт */
+  font-wetght: 300;
+  padding: 5px;
+  font-size: 15px;
+}
+.cp-form__input:focus {
+  border: 1px solid #8a8a8a;
+  background-color: #fefefe;
+  outline: none;
+  box-shadow: 0 0 5px #cacaca;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+.cp-form__money-input {
+  /* шрифт */
+  padding: 15px;
+  font-size: 20px;
+}
+.cp-form__submit {
+  box-sizing: border-box;
+  background: #991B1E;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 2px solid #bebebe00;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.4s;
+  /* шрифт */
+  padding: 10px;
+  font-size: 20px;
+}
+.cp-form__submit:focus {
+  border: 2px solid #464646;
+}
+.cp-form__submit:hover {
+  background: #1B76FE;
+}
+.cp-form__policy {
+  display: inline-block;
+  margin: auto;
+  max-width: 250px;
+  text-align: center;
+  /* шрифт */
+  font-size: 12px;
+}
+.cp-form a {
+  color: #000 !important;
+}
+
+/*# sourceMappingURL=form.css.map */

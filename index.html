@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ -->
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+    <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="./form.css" rel="stylesheet" type="text/css">
+	<title>Форма cloudpayments</title>
+</head>
+
+<body style="background-color: #f8f8f8;">
+    <div class="form-wrapper">
+        <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ начало -->
+        <form class="cp-form">
+            <label class="cp-form__label" for="cp-email">
+                Электронная почта
+            </label>
+            <input class="cp-form__input" type="email" id="cp-email" placeholder="Не обязательно">
+            <label class="cp-form__label">
+                Сумма
+            </label>
+            <div class="cp-form__money">
+                <button class="cp-form__money-button" value=500>500р.</button>
+                <button class="cp-form__money-button" value=1000>1000р.</button>
+                <button class="cp-form__money-button" value=5000>5000р.</button>
+            </div>
+            <input class="cp-form__input cp-form__money-input" id="cp-money" type="number" placeholder="Другая сумма">
+            <button class="cp-form__submit" id=cp-submit type="submit">Оплатить</button> 
+            <span class="cp-form__policy" >Перечисляя нам средства, вы соглашаетесь с условиями 
+                <a href="#">договора оферты.</a>
+                
+            </span>
+        </form>
+        <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ конец -->
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
