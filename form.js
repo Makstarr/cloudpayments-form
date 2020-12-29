@@ -1,6 +1,3 @@
-import "./cloudpayments.sass"
-
-
 const buttons = document.getElementsByClassName("cp-form__money-button");
 const moneyInput = document.getElementById("cp-money");
 const submit = document.getElementById("cp-submit");
