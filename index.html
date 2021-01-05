@@ -17,11 +17,11 @@
 <body style="background-color: #f8f8f8;">
     <div class="form-wrapper">
         <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ начало -->
-        <form class="cp-form">
+        <form class="cp-form" id="cp-form">
             <label class="cp-form__label" for="cp-email">
-                Электронная почта
+                Электронная почта *
             </label>
-            <input class="cp-form__input" type="email" id="cp-email" placeholder="email" required>
+            <input class="cp-form__input" type="email" id="cp-email" placeholder="Обязательно" required>
             <label class="cp-form__label">
                 Сумма
             </label>
@@ -30,11 +30,10 @@
                 <button class="cp-form__money-button" value=1000>1000р.</button>
                 <button class="cp-form__money-button" value=5000>5000р.</button>
             </div>
-            <input class="cp-form__input cp-form__money-input" id="cp-money" type="number" placeholder="Другая сумма">
+            <input class="cp-form__input cp-form__money-input" id="cp-money" type="number" placeholder="Другая сумма" min=1 required>
             <button class="cp-form__submit" id=cp-submit type="submit">Оплатить</button> 
             <span class="cp-form__policy" >Перечисляя нам средства, вы соглашаетесь с условиями 
-                <a href="#">договора оферты.</a>
-                
+                <a href="http://kroog2.ru/media/filer_public/2c/00/2c00edbb-0981-4f10-8bdb-d684bb3f50c2/oferta_na_sait.pdf" target="blank">договора оферты.</a> 
             </span>
         </form>
         <!-- ФОРМА ДЛЯ ПОЖЕРТВОВАНИЙ конец -->

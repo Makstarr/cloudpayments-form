@@ -1,6 +1,6 @@
 const buttons = document.getElementsByClassName("cp-form__money-button");
 const moneyInput = document.getElementById("cp-money");
-const submit = document.getElementById("cp-submit");
+const form = document.getElementById("cp-form");
 const cpEmail = document.getElementById("cp-email");
 
 
@@ -50,13 +50,8 @@ Array.from(buttons).forEach(element => {
 });
 
 
-submit.addEventListener("click", function(event){ 
+form.addEventListener("submit", function(event){ 
     event.preventDefault();
-    /* Проверка поля с суммой */
-    if (Number(moneyInput.value)>0){
-        pay(Number(moneyInput.value), cpEmail.value);
-    }
-    else{
-        alert("Введите сумму")
-    }
+    /* Проверка полей через HTML */
+    pay(Number(moneyInput.value), cpEmail.value);
 });
